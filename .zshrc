@@ -72,8 +72,10 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git colored-man-pages)
 
+ZSH_CUSTOM="${ZSH_CUSTOM:-$ZSH/custom}"
+
 for _p in zsh-autosuggestions zsh-syntax-highlighting; do
-    if [[ -d "$_custom_path/$_p" || -d "$_default_path/$_p" ]]; then
+    if [[ -d "$ZSH_CUSTOM/plugins/$_p" ]]; then
         plugins+=("$_p")
     fi
 done
