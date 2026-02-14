@@ -70,7 +70,14 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git colored-man-pages)
+
+for _p in zsh-autosuggestions zsh-syntax-highlighting; do
+    if [[ -d "$_custom_path/$_p" || -d "$_default_path/$_p" ]]; then
+        plugins+=("$_p")
+    fi
+done
+
 if (( $+commands[tmux] )); then
 plugins+=(tmux)
 fi
