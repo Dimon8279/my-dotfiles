@@ -1,0 +1,12 @@
+[Behavior]
+OpenAfterStart=true
+
+[Desktop Entry]
+DefaultProfile=my-profile.profile
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+DynamicTabTitles=true
+Height=70
