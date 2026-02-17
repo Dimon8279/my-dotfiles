@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-my-card() {
+sd-card() {
     local dev="/dev/mmcblk0p1"
 
     if [[ ! -b "$dev" ]]; then
