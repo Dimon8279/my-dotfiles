@@ -14,7 +14,7 @@
     {
       "type": "command",
       "key": "OS Age",
-      "text": "birth=$(stat -c %W / 2>/dev/null || stat -f %B / 2>/dev/null); if [ -z \"$birth\" ] || [ \"$birth\" -eq 0 ]; then birth=$(find / -maxdepth 0 -printf '%T@' 2>/dev/null); fi; current=$(date +%s); days=$(( (current - birth) / 86400 )); echo \"$days days\""
+      "text": "birth=$(stat -c %W / 2>/dev/null || stat -f %B / 2>/dev/null); if [ -z \"$birth\" ] || [ \"$birth\" -le 0 ]; then birth=$(find / -maxdepth 0 -printf '%T@\\n' | cut -d. -f1); fi; current=$(date +%s); echo $(( (current - birth) / 86400 )) days"
     },
     "uptime",
     "packages",
