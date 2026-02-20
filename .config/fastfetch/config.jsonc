@@ -29,7 +29,11 @@
     "cursor",
     "terminal",
     "terminalfont",
-    "cpu",
+    {
+      "type": "cpu",
+      "temp": true,
+      "freqPrecision": 2
+    },
     "gpu",
     "memory",
     "swap",
