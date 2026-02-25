@@ -1,5 +1,5 @@
 [Background]
-Color=12,12,12
+Color=20,22,34
 
 [BackgroundFaint]
 Color=44,44,44
@@ -90,11 +90,11 @@ Color=255,255,255
 
 [General]
 Anchor=0.5,0.5
-Blur=true
+Blur=false
 ColorRandomization=false
 Description=Campbell
 FillStyle=Tile
-Opacity=0.34
+Opacity=1
 Wallpaper=
 WallpaperFlipType=NoFlip
 WallpaperOpacity=1
