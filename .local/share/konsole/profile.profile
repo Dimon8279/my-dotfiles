@@ -2,5 +2,5 @@
 ColorScheme=Campbell
 
 [General]
-Name=my-profile
+Name=profile
 Parent=FALLBACK/

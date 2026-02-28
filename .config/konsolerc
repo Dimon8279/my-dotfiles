@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [Desktop Entry]
-DefaultProfile=my-profile.profile
+DefaultProfile=profile.profile
 
 [General]
 ConfigVersion=1
