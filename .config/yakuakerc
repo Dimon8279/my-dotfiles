@@ -2,7 +2,7 @@
 OpenAfterStart=true
 
 [Desktop Entry]
-DefaultProfile=my-profile.profile
+DefaultProfile=profile.profile
 
 [Dialogs]
 FirstRun=false
