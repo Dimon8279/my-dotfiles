@@ -18,7 +18,7 @@ for _p in zsh-autosuggestions zsh-syntax-highlighting; do
 done
 
 if (( $+commands[tmux] )); then
-plugins+=(tmux)
+    plugins+=(tmux)
 fi
 
 source "$ZSH/oh-my-zsh.sh"
