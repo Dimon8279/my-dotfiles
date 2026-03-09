@@ -28,7 +28,6 @@
     "font",
     "cursor",
     "terminal",
-    "terminalfont",
     {
       "type": "cpu",
       "temp": true,
@@ -40,7 +39,6 @@
     "disk",
     //"localip",
     "battery",
-    "poweradapter",
     "locale",
     "break",
     "colors"
