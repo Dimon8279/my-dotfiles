@@ -51,6 +51,7 @@ sd-card() {
 # ------------------------------------------------------------------------------
 alias sc='systemctl'
 alias sct='systemctl-tui'
+alias full-system-upgrade='sudo pacman -Syu && yay && flatpak update'
 alias restart-plasma='systemctl --user restart plasma-plasmashell.service'
 #alias login='systemctl restart sddm'
 alias git-tree='tree -a -I ".git"'
