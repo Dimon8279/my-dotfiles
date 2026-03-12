@@ -14,7 +14,7 @@
     {
       "type": "command",
       "key": "OS Age",
-      "text": "birth=$(stat -c %W / 2>/dev/null || stat -f %B / 2>/dev/null); if [ -z \"$birth\" ] || [ \"$birth\" -le 0 ]; then birth=$(find / -maxdepth 0 -printf '%T@\\n' | cut -d. -f1); fi; current=$(date +%s); echo $(( (current - birth) / 86400 )) days"
+      "text": "birth=\"\"; if birth=$(stat -c %W / 2>/dev/null) && [ \"$birth\" -gt 0 ]; then :; elif birth=$(stat -f %B / 2>/dev/null) && [ \"$birth\" -gt 0 ]; then :; elif birth=$(stat -c %Y / 2>/dev/null) && [ \"$birth\" -gt 0 ]; then :; elif birth=$(stat -f %m / 2>/dev/null) && [ \"$birth\" -gt 0 ]; then :; else echo \"unknown\"; exit 0; fi; now=$(date +%s); days=$(( (now - birth) / 86400 )); echo \"$days days\""
     },
     "uptime",
     "packages",
@@ -44,4 +44,3 @@
     "colors"
   ]
 }
-
