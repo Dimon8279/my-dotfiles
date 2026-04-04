@@ -44,7 +44,7 @@ body = "{album}"
 
 [layout]
 playback_window_position = "Top"
-playback_window_height = 6
+playback_window_height = 5
 
 [layout.library]
 playlist_percent = 40
