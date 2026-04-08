@@ -1,3 +1,7 @@
+[Appearance]
+Skin=breeze-minimal
+SkinInstalledWithKns=true
+
 [Behavior]
 OpenAfterStart=true
 
