@@ -1,5 +1,8 @@
 {
-  "logo": "blackarch",
+  "logo": {
+    "source": "blackarch",
+    "position": "top"
+  },
   "display": {
     "separator": " : ",
     "color": "red"
