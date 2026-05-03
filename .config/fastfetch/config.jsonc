@@ -1,8 +1,8 @@
 {
-  "logo": "blackarch",
+  "logo": "void",
   "display": {
     "separator": " : ",
-    "color": "red"
+    "color": "green"
   },
 
   "modules": [
