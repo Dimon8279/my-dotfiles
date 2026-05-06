@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias login='systemctl restart sddm'
+alias git-tree='tree -a -I ".git"'
 alias ff='fastfetch'
 alias cl='clear'
 #alias ls='nnn -de'
