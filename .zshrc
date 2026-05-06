@@ -50,8 +50,8 @@ sd-card() {
 # Aliases
 # ------------------------------------------------------------------------------
 alias full-system-upgrade='sudo xbps-install -Su && flatpak update'
-alias nosleep='systemd-inhibit --what=sleep:idle --who="me" --why="manual block" --mode=block sleep infinity &'
-alias nosleep-off='kill $!'
+alias nosleep='xset s off && xset -dpms && echo "Sleep inhibited"'
+alias nosleep-off='xset s on && xset +dpms && echo "Sleep restored"'
 alias git-tree='tree -a -I ".git"'
 alias sp='spotify_player'
 alias ff='fastfetch'
