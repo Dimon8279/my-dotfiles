@@ -49,7 +49,7 @@ sd-card() {
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
-alias full-system-upgrade='sudo pacman -Syu && yay && flatpak update'
+alias full-system-upgrade='sudo xbps-install -Su && flatpak update'
 alias nosleep='systemd-inhibit --what=sleep:idle --who="me" --why="manual block" --mode=block sleep infinity &'
 alias nosleep-off='kill $!'
 alias git-tree='tree -a -I ".git"'
