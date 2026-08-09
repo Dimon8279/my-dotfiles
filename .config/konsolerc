@@ -8,11 +8,16 @@ ConfigVersion=1
 
 [MainWindow][Toolbar mainToolBar]
 IconSize=16
+ToolButtonStyle=IconOnly
 
 [MainWindow][Toolbar sessionToolbar]
 IconSize=16
+ToolButtonStyle=IconOnly
 
 [Toolbar mainToolBar]
+IconSize=16
+
+[Toolbar sessionToolbar]
 IconSize=16
 
 [UiSettings]
