@@ -6,5 +6,14 @@ DefaultProfile=profile.profile
 [General]
 ConfigVersion=1
 
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+
+[MainWindow][Toolbar sessionToolbar]
+IconSize=16
+
+[Toolbar mainToolBar]
+IconSize=16
+
 [UiSettings]
 ColorScheme=
