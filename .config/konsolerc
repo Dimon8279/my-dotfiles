@@ -16,9 +16,11 @@ ToolButtonStyle=IconOnly
 
 [Toolbar mainToolBar]
 IconSize=16
+ToolButtonStyle=IconOnly
 
 [Toolbar sessionToolbar]
 IconSize=16
+ToolButtonStyle=IconOnly
 
 [UiSettings]
 ColorScheme=
